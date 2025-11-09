@@ -44,10 +44,3 @@ SC_WD_1/
 │── script.js
 
 ---
-
-
-
-## 👤 **Author**
-
-Designed by **Abhishek**
-
