@@ -1,14 +1,17 @@
-// Navbar color change on scroll
-window.addEventListener("scroll", function () {
+
+window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
-  navbar.classList.toggle("scrolled", window.scrollY > 50);
+  if (window.scrollY > 30) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
 });
 
-// Hamburger menu toggle
+
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 
 hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navLinks.classList.toggle("show");
+  navLinks.classList.toggle("active");
 });
